@@ -3,8 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 
-import VueResource from 'vue-resource'
-Vue.use(VueResource)
+import axios from 'axios'
+Vue.use(axios)
+
+window.events = new Vue()
 
 Vue.config.productionTip = false
 
